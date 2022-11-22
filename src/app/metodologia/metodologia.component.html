@@ -1,0 +1,276 @@
+<div class="container">
+    <div class="text-center">
+        <p><b>Metodología 5w2h: ¿qué es y cómo te ayudará a tomar las acciones correctas para tu empresa?</b></p>
+        <p>5W2H es una de las metodologías de gestión empresarial más utilizadas. Puede aplicarse en muchos momentos, empresas y proyectos, ayuda a responder una serie de preguntas decisivas para hacer que las acciones de un negocio sean más estratégicas y precisas.</p>
+    </div>
+</div>
+<igx-stepper #stepper>
+    <ng-template igxStepActiveIndicator>
+        <igx-icon>edit</igx-icon>
+    </ng-template>
+    <ng-template igxStepCompletedIndicator>
+        <igx-icon>check</igx-icon>
+    </ng-template>
+    <igx-step> 
+       <p igxStepTitle>What</p>
+       <div igxStepContent>
+        <p class="text-center"><b>What: ¿Qué se hará? </b></p>
+        <p class="text-center">
+            
+            La primera W significa "Qué", traducido al español. ¿Qué quieres o necesitas hacer?
+
+                Siguiendo nuestro ejemplo, podría llenar este campo con la siguiente redacción: ¡Quiero contratar un servicio / software para automatizar estrategias de marketing, como la creación de flujos de automatización de marketing por correo electrónico!
+        </p>
+        <form action="">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" (click)="agregarPregunta1($event); stepper.next()"type="button">Agregar Pregunta</button>
+                </div>
+                <input type="text" name="what" [formControl]="what" class="form-control" placeholder="Ej: ¿Qué se va a necesitar en este proyecto?">
+              </div>
+            <div>
+                {{w1}}
+            </div>
+        </form>
+       </div>
+    </igx-step>
+    <igx-step> 
+       <p igxStepTitle>Why</p>
+            <div igxStepContent>
+                <p class="text-center">
+                    <b>
+                        Why: ¿Por qué se hará? 
+                    </b>
+                </p>
+                <p class="text-center">
+                    La segunda W significa "Por qué" en español. Aquí debe determinar por qué quiere hacerlo, por qué es necesario y por qué es relevante.  
+
+En nuestro ejemplo, la razón para invertir en el software sería trazar un viaje de compra y encaminar a clientes potenciales hasta que se cierre el pedido.
+                </p>
+                <form action="">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" (click)="agregarPregunta2($event); stepper.next()"type="button">Agregar Pregunta</button>
+                        </div>
+                        <input type="text" name="why" [formControl]="why" class="form-control" placeholder="Ej: ¿Por qué se va a hacer este proyecto?">
+                      </div>
+                    <div>
+                        {{w2}}
+                    </div>
+                </form>
+            <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+    
+            </div>
+    </igx-step>
+    <igx-step> 
+       <p igxStepTitle>Where</p>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>
+                    Where: ¿Dónde se hará? 
+                </b>
+            </p>
+            <p class="text-center">
+                La quinta y última W se refiere al lugar donde debe llevarse a cabo la acción. En algunos casos, dependiendo del proyecto, este lugar puede interpretarse como el punto en el que se tomarán medidas.
+
+En nuestro ejemplo, podemos definir aquí qué compañía será contratada para proporcionar el software.
+            </p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" (click)="agregarPregunta3($event); stepper.next()"type="button">Agregar Pregunta</button>
+                    </div>
+                    <input type="text" name="where" [formControl]="where" class="form-control" placeholder="Ej: ¿Dónde abarcará este proyecto?">
+                  </div>
+                <div>
+                    {{w3}}
+                </div>
+            </form>
+            <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+    
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>When</span>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>
+                    When: ¿Cuándo se hará? 
+                </b>
+            </p>
+            <p class="text-center">
+                Ahora, en el cuarto W, determinemos cuándo debe llevarse a cabo la acción. Aquí, estamos hablando de la fecha límite y esto es fundamental en cualquier proyecto. Después de todo, un plan de acción sin plazos y pasos ciertamente no ocurrirá como se esperaba.  
+
+Vamos decir que en nuestro ejemplo, la estrategia debe aplicarse dentro de una semana, con una fecha específica para la contratación.
+            </p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" (click)="agregarPregunta4($event); stepper.next()"type="button">Agregar Pregunta</button>
+                    </div>
+                    <input type="text" name="when" [formControl]="when" class="form-control" placeholder="Ej: ¿Cuándo se realizará este proyecto?">
+                  </div>
+                <div>
+                    {{w4}}
+                </div>
+            </form>
+            <div class="sample-step-actions">
+                <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+            </div>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>Who</span>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>
+                    Who: ¿Por quién se hará? 
+                </b>
+            </p>
+            <p class="text-center">
+                La tercera W se refiere a quién tomará la acción determinada. Este punto es importante para designar a las personas responsables.
+
+Si es el caso de un plan de acción de múltiples actividades y múltiples partes interesadas, todo debe estar bien descrito para que no haya errores.  
+
+Siguiendo nuestro ejemplo, supongamos que tú mismo seas el responsable de evaluar y contratar el software, ¿verdad?
+            </p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" (click)="agregarPregunta5($event); stepper.next()"type="button">Agregar Pregunta</button>
+                    </div>
+                    <input type="text" name="who" [formControl]="who" class="form-control" placeholder="¿Quiénes serán los responsables de estas actividades?">
+                  </div>
+                <div>
+                    {{w5}}
+                </div>
+            </form>
+            <div class="sample-step-actions">
+                <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+            </div>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>How</span>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>
+                    How: ¿Cómo se hará? 
+                </b>
+            </p>
+            <p class="text-center">
+                La primera H significa "Cómo". En la práctica, este campo se guarda para que especifique cómo se tomará el plan de acción.  
+
+Cómo es extremadamente importante ya que es más detallado. Puede incluir más información, incluso alguna que ya esté poblada en otros campos.
+
+Siguiendo nuestro ejemplo, podemos completar este campo de la siguiente manera: se contratará un software que permita la automatización del marketing, con marketing automático por correo electrónico para clientes potenciales que se registran en un formulario o página de destino.
+            </p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" (click)="agregarPregunta6($event); stepper.next()"type="button">Agregar Pregunta</button>
+                    </div>
+                    <input type="text" name="how" [formControl]="how" class="form-control" placeholder="Ej: ¿Cómo se realizará este proyecto?">
+                  </div>
+                <div>
+                    {{w6}}
+                </div>
+            </form>
+            <div class="sample-step-actions">
+                <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+            </div>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>How much</span>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>
+                    How much: ¿Cuánto costará? 
+                </b>
+            </p>
+            <p class="text-center">
+                La última letra, es decir, la segunda H, es relativa al costo de la acción. ¿Cuáles son los valores que involucran ese proyecto?
+
+Para finalizar nuestro ejemplo, en este campo, debemos completar los valores relacionados con la contratación del software.
+            </p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" (click)="agregarPregunta7($event); stepper.next()"type="button">Agregar Pregunta</button>
+                    </div>
+                    <input type="text" name="howm" [formControl]="howm" class="form-control" placeholder="Ej: ¿Cuánto se necesitará para realizar este proyecto">
+                  </div>
+                <div>
+                    {{w7}}
+                </div>
+            </form>
+            <div class="sample-step-actions">
+                <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+            </div>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>PDF</span>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>
+                    Presione generar pdf para imprimir la tabla en PDF
+                </b>
+            </p>
+              
+              <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">PREGUNTA</th>
+                    <th scope="col">DESCRIPCIÓN</th>
+                    <th scope="col">IDEA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">What</th>
+                    <td>{{w1}}</td>
+                    <td>RECURSOS</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Why</th>
+                    <td>{{w2}}</td>
+                    <td>OBJETIVO</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Where</th>
+                    <td>{{w3}}</td>
+                    <td>ALCANCE</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">When</th>
+                    <td>{{w4}}</td>
+                    <td>PERIODO</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Who</th>
+                    <td>{{w5}}</td>
+                    <td>RESPONSABLES</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">How</th>
+                    <td>{{w6}}</td>
+                    <td>ACTIVIDAD</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">How much</th>
+                    <td>{{w7}}</td>
+                    <td>CANTIDAD</td>
+                  </tr>
+                </tbody>
+              </table>
+            <button class="btn btn-outline-dark" (click)="generarPdf()">Generar PDF</button>
+            <div class="sample-step-actions">
+                <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+                <button igxButton="raised" class="btn btn-outline-success ml-2 mt-5"  (click)="stepper.reset()">Ir al comienzo</button>
+            </div>
+        </div>
+    </igx-step>
+</igx-stepper>
+

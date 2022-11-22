@@ -1,0 +1,87 @@
+<igx-stepper #stepper>
+    <ng-template igxStepActiveIndicator>
+        <igx-icon>edit</igx-icon>
+    </ng-template>
+    <ng-template igxStepCompletedIndicator>
+        <igx-icon>check</igx-icon>
+    </ng-template>
+    <igx-step> 
+       <p igxStepTitle>Recolectar información</p>
+       <div igxStepContent>
+        <p class="text-center">
+            <b>Haga una lista de causas que provocaron el problema</b>
+        </p>
+        <form action="">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" (click)="agregarCausa($event)"type="button">Agregar a la lista</button>
+                </div>
+                <input type="text" name="causa" [formControl]="causa" class="form-control" placeholder="Ingrese una causa">
+              </div>
+            <ul>
+                <li *ngFor="let causa of causas">{{causa}}</li>
+            </ul>
+        </form>
+            <div class="sample-step-actions mt-5">
+                <button igxButton="raised" class="btn btn-outline-success ml-2" (click)="stepper.next()">Siguiente</button>
+            </div>
+       </div>
+    </igx-step>
+    <igx-step> 
+       <p igxStepTitle>Detectar problema</p>
+            <div igxStepContent>
+                <p class="text-center">
+                    <b>En este paso analizaremos las causas y detectaremos el problema principal</b>
+                </p>
+                <form action="">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <button class="btn btn-outline-secondary" (click)="agregarProblema($event)"type="button">Guardar</button>
+                        </div>
+                        <input type="text" name="problema" [formControl]="problema" class="form-control" placeholder="Ingrese el problema principal">
+                      </div>
+                    <ul>
+                        <div>
+                            {{p}}
+                        </div>
+                    </ul>
+                </form>
+            <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+            <button igxButton="raised" class="btn btn-outline-success ml-2 mt-5" (click)="stepper.next()">Siguiente</button>
+            </div>
+    </igx-step>
+    <igx-step> 
+       <p igxStepTitle>Efectos</p>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>En este paso determinaremos los efectos causados por el problema</b>
+            </p>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary" (click)="agregarEfecto($event)"type="button">Agregar a la lista</button>
+                    </div>
+                    <input type="text" name="efecto" [formControl]="efecto" class="form-control" placeholder="Ingrese un efecto">
+                  </div>
+                <ul>
+                    <li *ngFor="let efecto of efectos">{{efecto}}</li>
+                </ul>
+            </form>
+            <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+            <button igxButton="raised" class="btn btn-outline-success ml-2 mt-5" (click)="stepper.next()">Siguiente</button>
+        </div>
+    </igx-step>
+    <igx-step>
+        <span igxStepTitle>Finalizar</span>
+        <div igxStepContent>
+            <p class="text-center">
+                <b>Presione generar pdf para crear el arbol de causas</b>
+            </p>
+            <button class="btn btn-outline-dark" (click)="generarPdf()">Generar PDF</button>
+            <div class="sample-step-actions">
+                <button igxButton="raised" class="btn btn-outline-dark mt-5" (click)="stepper.prev()">Anterior</button>
+                <button igxButton="raised" class="btn btn-outline-success ml-2 mt-5"  (click)="stepper.reset()">Siguiente</button>
+            </div>
+        </div>
+    </igx-step>
+</igx-stepper>
