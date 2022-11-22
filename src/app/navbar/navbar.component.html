@@ -25,12 +25,10 @@
             <li class="nav-item">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarTest" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Test</a>
                 <div class="dropdown-menu" aria-labelledby="navbarTest">
-                    <a class="dropdown-item">Arbol de causas</a>
-                    <a class="dropdown-item" href="#">5W-2H</a>
-                    <a class="dropdown-item" href="#">Nivel de estrés</a>
+                    <a class="dropdown-item" [routerLink]="['/testBurnout']">Test de burnout</a>
                 </div>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/aportes']" >Calcular aportes</a>
             </li>
             </ul>

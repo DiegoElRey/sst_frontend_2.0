@@ -1,0 +1,426 @@
+<div class="cotenedor">
+    <h2>Test del Síndrome de Burnout o Estrés Laboral</h2>
+
+    <br>
+
+    <div class="row">
+        <p>Instrucciones:de los siguientes síntomas, selecciona el grado experimentado durante los últimos 3 meses
+            siguiendo la siguiente regla:</p>
+        <br>
+        <p class="col 1">1:Nunca</p>
+        <p class="col 2">2:Pocas veces </p>
+        <p class="col 3">3:Algunas veces </p>
+        <p class="col 4">4:Frecuente</p>
+        <p class="col 5">5:Siempre</p>
+    </div>
+
+    <br>
+
+    <div id="donate">
+
+
+        <div class="row">
+            <div class="col-8">
+                <label>1. ¿Te sientes satisfecho/a con las horas que trabajas?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP1(1)" type="radio"
+                        name="togglep1"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP1(2)" type="radio"
+                        name="togglep1"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP1(3)" type="radio"
+                        name="togglep1"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP1(4)" type="radio"
+                        name="togglep1"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP1(5)" type="radio"
+                        name="togglep1"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>2. ¿Al terminar la jornada laboral, te siento cansado/a y agotado/a?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP2(1)" type="radio"
+                        name="togglep2"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP2(2)" type="radio"
+                        name="togglep2"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP2(3)" type="radio"
+                        name="togglep2"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP2(4)" type="radio"
+                        name="togglep2"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP2(5)" type="radio"
+                        name="togglep2"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>3. ¿Sientes sensación de cansancio o agotamiento?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP3(1)" type="radio"
+                        name="togglep3"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP3(2)" type="radio"
+                        name="togglep3"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP3(3)" type="radio"
+                        name="togglep3"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP3(4)" type="radio"
+                        name="togglep3"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP3(5)" type="radio"
+                        name="togglep3"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>4. ¿Crees que tu salario se ajusta a tus responsabilidades en el puesto que ocupas?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP4(1)" type="radio"
+                        name="toggle4"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP4(2)" type="radio"
+                        name="toggle4"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP4(3)" type="radio"
+                        name="toggle4"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP4(4)" type="radio"
+                        name="toggle4"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP4(5)" type="radio"
+                        name="toggle4"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>5. ¿Sientes jaquecas y dolores de cabeza?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP5(1)" type="radio"
+                        name="toggle5"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP5(2)" type="radio"
+                        name="toggle5"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP5(3)" type="radio"
+                        name="toggle5"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP5(4)" type="radio"
+                        name="toggle5"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP5(5)" type="radio"
+                        name="toggle5"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>6. ¿Tienes algún tiempo de descanso durante tu jornada laboral?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP6(1)" type="radio"
+                        name="toggleP6"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP6(2)" type="radio"
+                        name="toggleP6"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP6(3)" type="radio"
+                        name="toggleP6"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP6(4)" type="radio"
+                        name="toggleP6"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP6(5)" type="radio"
+                        name="toggleP6"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>7. ¿Te sientes desmotivado en tu trabajo?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP7(1)" type="radio"
+                        name="toggleP7"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP7(2)" type="radio"
+                        name="toggleP7"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP7(3)" type="radio"
+                        name="toggleP7"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP7(4)" type="radio"
+                        name="toggleP7"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP7(5)" type="radio"
+                        name="toggleP7"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>8. ¿Consideras que tu trabajo puede llegar a ser monótono y/o aburrido?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP8(1)" type="radio"
+                        name="toggleP8"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP8(2)" type="radio"
+                        name="toggleP8"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP8(3)" type="radio"
+                        name="toggleP8"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP8(4)" type="radio"
+                        name="toggleP8"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP8(5)" type="radio"
+                        name="toggleP8"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>9. ¿Agradeces tener la oportunidad de crecer en tu entorno laboral?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP9(1)" type="radio"
+                        name="toggleP9"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP9(2)" type="radio"
+                        name="toggleP9"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP9(3)" type="radio"
+                        name="toggleP9"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP9(4)" type="radio"
+                        name="toggleP9"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP9(5)" type="radio"
+                        name="toggleP9"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>10. ¿Has sentido disminución del apetito?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP10(1)" type="radio"
+                        name="toggleP10"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP10(2)" type="radio"
+                        name="toggleP10"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP10(3)" type="radio"
+                        name="toggleP10"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP10(4)" type="radio"
+                        name="toggleP10"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP10(5)" type="radio"
+                        name="toggleP10"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>11. ¿Te siento presionado/a por parte de personas en un cargo superior?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP11(1)" type="radio"
+                        name="toggleP11"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP11(2)" type="radio"
+                        name="toggleP11"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP11(3)" type="radio"
+                        name="toggleP11"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP11(4)" type="radio"
+                        name="toggleP11"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP11(5)" type="radio"
+                        name="toggleP11"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>12. ¿Las responsabilidades que se te exigen se ajustan a tu formación y al puesto que
+                    ocupas?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP12(1)" type="radio"
+                        name="toggleP12"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP12(2)" type="radio"
+                        name="toggleP12"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP12(3)" type="radio"
+                        name="toggleP12"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP12(4)" type="radio"
+                        name="toggleP12"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP12(5)" type="radio"
+                        name="toggleP12"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>13. ¿Si tienes algún problema relacionado con tu trabajo, tu entorno laboral facilita
+                    herramientas para solucionarlo?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP13(1)" type="radio"
+                        name="toggleP13"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP13(2)" type="radio"
+                        name="toggleP13"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP13(3)" type="radio"
+                        name="toggleP13"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP13(4)" type="radio"
+                        name="toggleP13"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP13(5)" type="radio"
+                        name="toggleP13"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>14. ¿Sientes que se te exigen cada día más y no sabes hasta qué punto podrás aguantar más
+                    responsabilidades y tareas?</label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP14(1)" type="radio"
+                        name="toggleP14"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP14(2)" type="radio"
+                        name="toggleP14"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP14(3)" type="radio"
+                        name="toggleP14"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP14(4)" type="radio"
+                        name="toggleP14"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP14(5)" type="radio"
+                        name="toggleP14"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-8">
+                <label>15. ¿Sientes temblores musculares y tic nerviosos? </label>
+            </div>
+            <div class="col-auto radio-grupo">
+                <label class="radio-content"><input class="radio" (click)="capturarP15(1)" type="radio"
+                        name="toggleP15"><span><strong>1</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP15(2)" type="radio"
+                        name="toggleP15"><span><strong>2</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP15(3)" type="radio"
+                        name="toggleP15"><span><strong>3</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP15(4)" type="radio"
+                        name="toggleP15"><span><strong>4</strong></span></label>
+                <label class="radio-content"><input class="radio" (click)="capturarP15(5)" type="radio"
+                        name="toggleP15"><span><strong>5</strong></span></label>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <br>
+
+
+    <div class="row">
+        <div class="text-center">
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button" (click)="calcular()"
+                class="btn btn-success col-4">Calcular resultado</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Resultado del test</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ">
+                <h5>{{test.Total}}/75, {{test.ResultadoTipoEstres}}</h5>
+                <div class="cuerporesultado">
+                    {{test.ResultadoDescripcion}}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal">Ver recomendaciones</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Recomendaciones para combatir el estrés
+                    laboral </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body cuerporesultado">
+                Es posible reducir en gran medida el estrés laboral siguiendo una serie de consejos que ayudan a
+                mantenerse motivado y llevar una vida saludable y equilibrada.
+                <br>
+                <h5>1. Identificar el motivo principal del estrés</h5>
+                Una buena forma es llevando un diario o tomar nota durante varias semanas de las situaciones que
+                provocan más estrés. Es interesante anotar cómo se responde a ellas y evaluar si han contribuido a
+                reducir el estrés de manera significativa.
+                <br>
+                <h5>2. Hacer ejercicio</h5>
+                Ayuda a aumentar la producción de endorfinas que hacen sentirse bien. Concentrarse en una actividad
+                deportiva ayuda a desconectar la mente. También contribuye a aumentar la confianza en uno mismo. Relaja
+                y mejora el sueño. Deporte y una dieta saludable son un equilibrio perfecto para combatir el estrés.
+                <br>
+                <h5>3. Conciliar la vida laboral y personal</h5>
+                La desconexión laboral es vital. Es imprescindible evitar actividades del trabajo en casa como revisar
+                correos electrónicos, atender llamadas que no sean urgentes o adelantar tareas. Cuando el trabajo
+                comienza a ocupar parte de la vida personal y la interfiere, es vital reflexionar sobre ello y
+                corregirlo.
+                <br>
+                <h5>4. Confiar en uno mismo y en el resto</h5>
+                Un grado elevado de estrés puede hacer tambalear la confianza en uno mismo. Aparecerán dudas e
+                inseguridades sobre el trabajo que afectarán a su resultado y calidad. Es fundamental mantener una
+                actitud positiva hacia las propias habilidades y las de los demás compañeros.
+                <br>
+                <h5>5. Fomentar la comunicación</h5>
+                Cuando las situaciones difíciles sobrepasan, compartir con el entorno las preocupaciones es una
+                excelente estrategia para reducir el estrés. Por ello, es fundamental mantener buenas relaciones con el
+                equipo y compañeros de trabajo.
+                <br>
+                <h5>6. Establecerse objetivos</h5>
+                Siempre objetivos realistas. Ponerse metas imposibles es causa de ansiedad y lleva al fracaso.
+                Planificar estrategias y llevar una organización adecuada para conseguir objetivos asumibles es motivo
+                de satisfacción.
+                <br>
+                <h5>7. Practicar técnicas de relajación</h5>
+                Pararse a respirar en un momento difícil. Saber desconectar durante unos minutos y descansar la mente.
+                La meditación o el yoga son actividades que ayudan a mantenerse enfocados y en equilibrio.
+                <br>
+                <h5>8. Fomentar la motivación personal</h5>
+                Mantenerse motivado es una de las mejores formas de luchar contra el estrés. Si se disfruta de realizar
+                las tareas, de lograr los objetivos que se marcan y se establece una buena relación laboral, el estrés y
+                la ansiedad se mantendrán alejados.
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success " data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal">Listo</button>
+            </div>
+        </div>
+    </div>
+</div>
