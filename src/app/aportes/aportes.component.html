@@ -1,5 +1,5 @@
 
-<div class="cotenedor1">
+<div class="cotenedor1 mt-3">
   <div>
     <div class="H1Aporte">
       Aportes al sistema general de riesgo laborales
@@ -9,7 +9,7 @@
     <label for="formGroupExampleInput" class="form-label">Ingrese el salario</label>
     <input type="text" [(ngModel)]="aportes.Salario" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo 1000000">
   </div>
-  <div class="col">
+  <div class="mb-1">
     <label for="inputState" class="form-label">Tipo de riesgo</label>
     <select [(ngModel)]="tipoDeRiesgo" id="inputState" class="form-select">
       <option selected>I Riesgo mínimo</option>
@@ -52,7 +52,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Reporte aportes</h5>
+        <div class="modal-title">Reporte aportes</div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
